@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,18 @@ namespace EdgarasZavialovas_S00178556
         public string OS_Image { get; set; }
 
         public string Phone_Image { get; set; }
+
+        //public decimal IncreasedPrice
+
+        public virtual List<Phone> Phones { get; set; }
     }
+    public class PhoneDescription : DbContext
+    {
+        public PhoneDescription() : base("PhoneDescription") { }
+        public DbSet<Phone> Phones { get; set; }
+
+    }
+
 }
+
+
