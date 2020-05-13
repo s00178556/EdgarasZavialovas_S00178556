@@ -11,7 +11,7 @@ namespace EdgarasZavialovas_S00178556
     {
         public string Name { get; set; }
 
-        public decimal price { get; set; }
+        public decimal Price { get; set; }
 
         public string OperatingSystem { get; set; }
 
@@ -20,15 +20,26 @@ namespace EdgarasZavialovas_S00178556
         public string Phone_Image { get; set; }
 
         //public decimal IncreasedPrice
+        //{
+        //    get { return _price}
+        //    { _price = value;  }
+        //}
 
         public virtual List<Phone> Phones { get; set; }
     }
+    
+
+   
+
+
     public class PhoneDescription : DbContext
     {
         public PhoneDescription() : base("PhoneDescription") { }
         public DbSet<Phone> Phones { get; set; }
 
     }
+
+  
 
 }
 

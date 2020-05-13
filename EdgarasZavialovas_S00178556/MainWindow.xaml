@@ -5,10 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EdgarasZavialovas_S00178556"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <DataTemplate x:Key="lbxPhones">
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+
+                <Image Source="{Binding OS_Image}" Width="75"/>
+
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" Margin="5" FontSize="12"/>
+                </StackPanel>
+                
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="382"/>
-        <TextBlock HorizontalAlignment="Left" Margin="548,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="82" Width="244"/>
-        <Image HorizontalAlignment="Left" Height="303" Margin="548,116,0,0" VerticalAlignment="Top" Width="244"/>
+        <ListBox x:Name="lbxPhones" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="382"/>
+        <TextBlock x:Name="tblkPrice" HorizontalAlignment="Left" Margin="548,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="82" Width="244"/>
+        <Image x:Name="imgImage" HorizontalAlignment="Left" Height="303" Margin="548,116,0,0" VerticalAlignment="Top" Width="244"/>
     </Grid>
 </Window>

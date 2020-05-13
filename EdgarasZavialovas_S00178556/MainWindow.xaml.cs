@@ -20,9 +20,20 @@ namespace EdgarasZavialovas_S00178556
     /// </summary>
     public partial class MainWindow : Window
     {
+        PhoneDescription db = new PhoneDescription();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //code for window loaded
+            var query = from t in db.Phones
+                        select t.Name;
+
+            lbxPhones.ItemsSource = query.ToList();
+
         }
     }
 }
