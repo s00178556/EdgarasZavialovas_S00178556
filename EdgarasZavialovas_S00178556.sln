@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgarasZavialovas_S00178556
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagmentPhone", "DataManagmentPhone\DataManagmentPhone.csproj", "{0FDDD88F-F91B-4CC3-989F-72EFDF5C59A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{E841DEB0-CE21-436F-993D-62CC0570CD85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0FDDD88F-F91B-4CC3-989F-72EFDF5C59A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FDDD88F-F91B-4CC3-989F-72EFDF5C59A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FDDD88F-F91B-4CC3-989F-72EFDF5C59A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E841DEB0-CE21-436F-993D-62CC0570CD85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E841DEB0-CE21-436F-993D-62CC0570CD85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E841DEB0-CE21-436F-993D-62CC0570CD85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E841DEB0-CE21-436F-993D-62CC0570CD85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

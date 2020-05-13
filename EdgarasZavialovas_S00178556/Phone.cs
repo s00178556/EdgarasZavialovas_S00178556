@@ -17,12 +17,17 @@ namespace EdgarasZavialovas_S00178556
 
         public string OS_Image { get; set; }
 
+        public void percentagePrice(decimal v)
+        {
+            throw new NotImplementedException();
+        }
+
         public string Phone_Image { get; set; }
 
-      
+
         public virtual Phone phone { get; set; }
 
-        public decimal percentagePrice (string userInput, Phone phone)
+        public decimal percentagePrice(string userInput, Phone phone)
         {
             int entered = 0;
             try
@@ -34,17 +39,17 @@ namespace EdgarasZavialovas_S00178556
                 throw;
             }
 
-            if (entered !=0)
+            if (entered != 0)
             {
                 decimal percentage = entered / 50;
                 decimal TakeAway = phone.Price * percentage;
-                    decimal afterDiscount = TakeAway - phone.Price;
+                decimal afterDiscount = TakeAway - phone.Price;
 
                 Value(phone, afterDiscount);
 
             }
-            return phone.Price
-        }
+            return phone.Price;
+        } 
 
         private void Value(Phone phone, decimal afterDiscount)
         {
