@@ -34,6 +34,27 @@ namespace EdgarasZavialovas_S00178556
 
             lbxPhones.ItemsSource = query.ToList();
 
+            
+
+
+        }
+
+        private void lbxPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Phone selected = lbxPhones.SelectedItem as Phone;
+
+            if (selected != null)
+            {
+
+                //display tblk description
+
+                tblkPrice.Text = selected.Name;
+
+                //Displays the image in this listbox
+                string imagePath = $"\\Images\\{selected.Phone_Image}.jpg";
+                imgPhone.Source = new BitmapImage(new Uri(imagePath, UriKind.Relative));
+
+            }
         }
     }
 }
