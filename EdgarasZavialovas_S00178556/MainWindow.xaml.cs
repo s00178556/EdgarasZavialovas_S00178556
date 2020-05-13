@@ -46,7 +46,7 @@ namespace EdgarasZavialovas_S00178556
             if (selected != null)
             {
 
-                //display tblk description
+                //display tblk Price
 
                 tblkPrice.Text = selected.Name;
 

@@ -22,7 +22,34 @@ namespace EdgarasZavialovas_S00178556
       
         public virtual Phone phone { get; set; }
 
+        public decimal percentagePrice (string userInput, Phone phone)
+        {
+            int entered = 0;
+            try
+            {
+                entered = int.Parse(userInput);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
+            if (entered !=0)
+            {
+                decimal percentage = entered / 50;
+                decimal TakeAway = phone.Price * percentage;
+                    decimal afterDiscount = TakeAway - phone.Price;
+
+                Value(phone, afterDiscount);
+
+            }
+            return phone.Price
+        }
+
+        private void Value(Phone phone, decimal afterDiscount)
+        {
+           phone.Price = afterDiscount;
+        }
     }
     
 

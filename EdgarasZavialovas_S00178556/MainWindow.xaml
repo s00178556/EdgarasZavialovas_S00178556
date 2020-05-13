@@ -26,7 +26,7 @@
     </Window.Resources>
     <Grid>
         <ListBox x:Name="lbxPhones" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="382"/>
-        <TextBlock x:Name="tblkPrice" HorizontalAlignment="Left" Margin="548,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="82" Width="244"/>
+        <TextBlock x:Name="tblkPrice" HorizontalAlignment="Left" Margin="548,0,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Height="82" Width="244"/>
         <Image x:Name="imgPhone" HorizontalAlignment="Left" Height="251" Margin="564,158,0,0" VerticalAlignment="Top" Width="218"/>
     </Grid>
 </Window>
